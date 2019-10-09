@@ -8,7 +8,7 @@ Those who use Java are probably familiar with the traditional unit of concurrenc
 Kotlin brought first class support to a different paradigm, called _coroutines_.
 
 This workshop intends to demonstrate the differences between concurrency models based on threads
-and concurrency models based on coroutines. We will present coroutines to persons who have already 
+and concurrency models based on coroutines. We will present coroutines to developers who have already 
 used threads and answer questions such as:
 
 * How different are coroutines and Threads?
@@ -20,4 +20,37 @@ Kotlin coroutines brought to the JVM.
 
 ### Prerequisites
 
-Participants are expected to have basic notions of threading, concurrency, parallelism and synchronisation. 
+You are expected to have basic notions of threading, concurrency, parallelism and synchronization. 
+
+You only need a basic working knowledge of the Kotlin language.
+
+### Activities
+
+1. Basic principles behind coroutines (presentation).
+
+1. Simple coroutine declaration and usage.
+    * Bridging worlds with `runBlocking` functions.
+    * The `launch` function.
+    * The `suspend` keyword.
+
+1. How lightweight are coroutines?
+    * Create 100000 threads. What happens?
+    * Create 100000 coroutines. What happens?
+
+1. Cooperative vs. preemptive.
+    * What happens if a coroutine misbehaves and blocks?
+    * Explicit yielding.
+
+1. Cancellation and timeouts.
+    * The `Job` interface.
+    * The `withTimeout` function.
+
+1. Explicit concurrent execution of coroutines.
+    * The `async` function.
+    * The `Delayed` interface.
+    * The `coroutineScope` function.
+
+1. Shared mutable state...
+    * Synchronization.
+
+1. Generators (_flows_).
