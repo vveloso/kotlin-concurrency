@@ -1,5 +1,11 @@
 package nl.codenomads.workshop
 
-fun main() {
-    println("Hello world")
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+
+fun main() = runBlocking {
+    launch {
+        println("Hello")
+    }
+    println("world")
 }
