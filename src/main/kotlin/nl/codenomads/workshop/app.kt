@@ -4,6 +4,22 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.yield
 import kotlin.system.measureTimeMillis
 
+/**
+ * The purpose of this exercise is to get ourselves started with cancellation of coroutines.
+ *
+ * 1. Run the code as-is and take good note of how long the code takes to run on your machine.
+ *
+ * 2. Refactor the code so that you use launch() to calculate and print the value of pi.
+ *    This way you can use an instance of Job to manipulate the coroutine.
+ *
+ * 3. Cancel the coroutine after half this time has passed and wait until it completes (after
+ *    cancellation of course).
+ *
+ * 4. Replace the explicit yield() with a check of the isActive coroutine property. Repeat and
+ *    confirm the results.
+ *
+ * 5. Remove the isActive check. Don't add the yield() again. Did the coroutine cancel as before?
+ */
 fun main() {
 
     val duration = measureTimeMillis {
