@@ -1,4 +1,4 @@
-package nl.codenomads.workshop
+package coroutines.workshop
 
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
