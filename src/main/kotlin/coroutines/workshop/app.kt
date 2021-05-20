@@ -1,4 +1,4 @@
-package nl.codenomads.workshop
+package coroutines.workshop
 
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
