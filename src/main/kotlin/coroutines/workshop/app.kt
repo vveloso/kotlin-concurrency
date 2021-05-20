@@ -1,4 +1,4 @@
-package nl.codenomads.workshop
+package coroutines.workshop
 
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.yield
