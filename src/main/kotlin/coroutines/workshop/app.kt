@@ -1,4 +1,4 @@
-package nl.codenomads.workshop
+package coroutines.workshop
 
 import com.github.kittinunf.fuel.Fuel
 import com.github.kittinunf.fuel.coroutines.awaitObjectResponse
