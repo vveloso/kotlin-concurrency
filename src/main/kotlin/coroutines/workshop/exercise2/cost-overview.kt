@@ -15,12 +15,12 @@ import kotlin.concurrent.thread
 
  Are there differences in results between the two approaches? Why?
  */
-fun main() {
+fun main() = runBlocking {
     var counter = 0
     try {
         repeat (100_000) {
-            thread {
-                sleep(1_000L)
+            launch {
+                delay(1_000L)
                 print('.')
             }
             ++counter
