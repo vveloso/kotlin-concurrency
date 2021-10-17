@@ -8,7 +8,7 @@ import kotlinx.serialization.Serializable
 import org.apache.commons.text.StringEscapeUtils
 import kotlin.system.measureTimeMillis
 
-/**
+/*
   Explicit concurrency.
 
   1. Measure the time it takes to get one translation of hello in one language.

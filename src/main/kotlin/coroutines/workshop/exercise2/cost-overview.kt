@@ -1,5 +1,9 @@
 package coroutines.workshop.exercise2
 
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import java.lang.Thread.sleep
 import kotlin.concurrent.thread
 
 /*
@@ -16,7 +20,8 @@ fun main() {
     try {
         repeat (100_000) {
             thread {
-                Thread.sleep(1_000L)
+                sleep(1_000L)
+                print('.')
             }
             ++counter
         }
