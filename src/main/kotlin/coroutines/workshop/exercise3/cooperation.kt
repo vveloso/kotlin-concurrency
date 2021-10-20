@@ -1,5 +1,6 @@
 package coroutines.workshop.exercise3
 
+import coroutines.workshop.common.logger
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.yield
@@ -26,8 +27,6 @@ import kotlin.system.measureTimeMillis
 
  5. Now experiment with yield() in the coroutines. Do the results differ?
  */
-
-val logger: Logger = LoggerFactory.getLogger("leibniz")
 
 fun main() {
 
