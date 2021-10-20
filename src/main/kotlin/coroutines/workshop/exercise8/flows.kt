@@ -1,5 +1,7 @@
 package coroutines.workshop.exercise8
 
+import coroutines.workshop.common.logger
+
 /*
 
   Challenge:
@@ -9,5 +11,5 @@ package coroutines.workshop.exercise8
  */
 
 fun main() {
-    println("Hello world")
+    logger.info("Hello world")
 }

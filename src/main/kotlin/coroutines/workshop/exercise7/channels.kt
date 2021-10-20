@@ -1,5 +1,7 @@
 package coroutines.workshop.exercise7
 
+import coroutines.workshop.common.logger
+
 /*
     Your task:
 
@@ -15,5 +17,5 @@ package coroutines.workshop.exercise7
  */
 
 fun main() {
-    println("I'm done with all this producing and consuming.")
+    logger.info("I'm done with all this producing and consuming.")
 }

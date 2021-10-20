@@ -3,6 +3,7 @@ package coroutines.workshop.exercise5
 import com.github.kittinunf.fuel.Fuel
 import com.github.kittinunf.fuel.coroutines.awaitObjectResponse
 import com.github.kittinunf.fuel.serialization.kotlinxDeserializerOf
+import coroutines.workshop.common.logger
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.Serializable
 import org.apache.commons.text.StringEscapeUtils
@@ -27,11 +28,11 @@ fun main() = runBlocking {
 
     val duration = measureTimeMillis {
 
-        println(getHelloInLanguage("fr"))
+        logger.info(getHelloInLanguage("fr"))
 
     }
 
-    println("Operation took $duration ms")
+    logger.info("Operation took $duration ms")
 }
 
 // very simplified function for retrieving the language code - lacks error handling
