@@ -15,10 +15,10 @@ import kotlin.system.measureTimeMillis
   3. Cancel the coroutine after half this time has passed and wait until it completes (after
      cancellation of course).
 
-  4. Replace the explicit yield() with a check of the isActive coroutine property. Repeat and
-     confirm the results.
+  4. Replace the explicit yield() with a check of the coroutineContext.isActive coroutine context property.
+     Repeat and note the results.
 
-  5. Remove the isActive check. Don't add the yield() again. Did the coroutine cancel as before?
+  5. Remove the isActive check. Add the yield() again. Did the coroutine cancel as before?
  */
 fun main() {
 
