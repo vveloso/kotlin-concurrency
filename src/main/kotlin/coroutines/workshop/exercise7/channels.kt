@@ -8,6 +8,9 @@ import coroutines.workshop.common.logger
     Connect two coroutines using channels. One produces things, the other consumes those things.
     Print the things to console as they are consumed.
 
+    Try to apply the fan-in and fan-out patterns.
+    Could you chain producers and consumers to achieve transformations in things going through the channel?
+
     Remember to use the channel interface: kotlinx.coroutines.channels.Channel<E>
 
     Optional:
