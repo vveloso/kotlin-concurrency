@@ -54,3 +54,7 @@ You only need a basic working knowledge of the Kotlin language.
     * Synchronization.
 
 1. Generators (_flows_).
+
+### Presentation slides
+
+The presentation slides are [available in this repo as well as a PDF file](Threading%20lightly%20in%20Kotlin.pdf).
