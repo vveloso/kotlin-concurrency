@@ -9,9 +9,9 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <kotlin.version>1.5.31</kotlin.version>
+        <kotlin.version>1.7.10</kotlin.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-        <kotlinx.version>1.5.2-native-mt</kotlinx.version>
+        <kotlinx.version>1.6.4</kotlinx.version>
         <fuel.version>2.3.1</fuel.version>
         <serialization.version>1.0-M1-1.4.0-rc</serialization.version>
     </properties>
@@ -40,7 +40,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.6</version>
+            <version>1.4.1</version>
         </dependency>
         <dependency>
             <groupId>com.github.kittinunf.fuel</groupId>
