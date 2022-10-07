@@ -37,9 +37,10 @@ fun main() = runBlocking {
 
 // very simplified function for retrieving the language code - lacks error handling
 // see https://fuel.gitbook.io/documentation/
+// also see https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Language_codes
 suspend fun getHelloInLanguage(languageCode: String): String =
     StringEscapeUtils.unescapeHtml4(
-        Fuel.get("https://fourtonfish.com/hellosalut", listOf("lang" to languageCode)) // see https://www.fourtonfish.com/hellosalut/hello/
+        Fuel.get("https://stefanbohacek.com/hellosalut/", listOf("lang" to languageCode)) // see https://stefanbohacek.com/project/hellosalut-api/
             .awaitObjectResponse(kotlinxDeserializerOf(HelloTranslation.serializer()))
             .third
             .hello
