@@ -1,11 +1,10 @@
 package coroutines.workshop.exercise4
 
 import coroutines.workshop.common.logger
-import kotlinx.coroutines.*
-import kotlinx.coroutines.NonCancellable.isActive
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
-import kotlin.coroutines.coroutineContext
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.yield
 import kotlin.system.measureTimeMillis
 
 /*

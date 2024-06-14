@@ -3,8 +3,6 @@ package coroutines.workshop.exercise2
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import java.lang.Thread.sleep
-import kotlin.concurrent.thread
 
 /*
  This exercise has two parts:

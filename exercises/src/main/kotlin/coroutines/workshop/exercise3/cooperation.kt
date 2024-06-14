@@ -4,8 +4,6 @@ import coroutines.workshop.common.logger
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.yield
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
 import kotlin.concurrent.thread
 import kotlin.system.measureTimeMillis
 
